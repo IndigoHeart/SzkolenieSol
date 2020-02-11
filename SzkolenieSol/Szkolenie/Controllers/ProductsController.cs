@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Szkolenie.Data;
 using Szkolenie.Models;
 
 namespace Szkolenie.Controllers
@@ -14,10 +15,12 @@ namespace Szkolenie.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly ProductRepository repo;
 
-        public ProductsController(ApplicationDbContext context)
+        public ProductsController(ApplicationDbContext context, ProductRepository productRepository)
         {
             _context = context;
+            repo = productRepository;
         }
 
         // GET: api/Products
