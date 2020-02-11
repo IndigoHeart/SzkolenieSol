@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Szkolenie.Models;
 using Microsoft.EntityFrameworkCore;
+using Szkolenie.Data;
 
 namespace Szkolenie
 {
@@ -29,6 +30,7 @@ namespace Szkolenie
         {
             services.AddControllers();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:ProductDatabase:ConnectionString"]));
+            services.AddScoped<ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
