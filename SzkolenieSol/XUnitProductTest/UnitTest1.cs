@@ -1,4 +1,6 @@
 using System;
+using Szkolenie.Controllers;
+using Szkolenie.Data;
 using Szkolenie.Models;
 using Xunit;
 
@@ -14,7 +16,9 @@ namespace XUnitProductTest
 
             //Act
 
-
+            var context = new ApplicationDbContext();
+            var repo = new ProductRepository(context);
+            var prodcontroler = new ProductsController(productRepository);
             //Assert
         }
     }
