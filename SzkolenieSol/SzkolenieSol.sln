@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Szkolenie", "Szkolenie\Szkolenie.csproj", "{FD1FDB53-849A-449B-B2D6-63477EACC806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitProductTest", "XUnitProductTest\XUnitProductTest.csproj", "{033EB320-C843-483D-869C-2C9E581E9089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Szkolenie.Tests", "XUnitProductTest\Szkolenie.Tests.csproj", "{033EB320-C843-483D-869C-2C9E581E9089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
